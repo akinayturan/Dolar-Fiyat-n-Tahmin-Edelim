@@ -15,8 +15,8 @@ veri = pd.read_csv("2016dolaralis.csv")
 x = veri["Gun"]
 y = veri["Fiyat"]
 
-x = x.reshape(251,1)
-y= y.reshape(251,1)
+x = x.values.reshape(251,1)
+y= y.values.reshape(251,1)
 
 plt.scatter(x,y)
 plt.show()
